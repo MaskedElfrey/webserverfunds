@@ -7,7 +7,7 @@
         <p><?= var_dump($_GET) ?></p>
         <p><?= var_dump($_POST) ?></p>
 
-        <div>Hi <?php echo htmlspecialchars($_POST['name']); ?>.
+        <div>Hi <?= htmlspecialchars($_POST['name'])?>
         </div>
     </body>
 </html>
