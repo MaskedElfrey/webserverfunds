@@ -10,27 +10,27 @@
             <p>frequency: <?= htmlspecialchars($_POST['time'])?></p> 
             <p>Your shoe preference(s):<br>
                 <?php
-                    if(isset($_POST['brand1'])
+                    if(isset($_POST['brand1']))
                     {
                         echo "Nike<br/>";
                     }   
 
-                    if(isset($_POST['brand2'])
+                    if(isset($_POST['brand2']))
                     {
                         echo "Adidas<br/>";
                     } 
 
-                    if(isset($_POST['brand3'])
+                    if(isset($_POST['brand3']))
                     {
                         echo "Jordan<br/>";
                     }  
 
-                    if(isset($_POST['brand4'])
+                    if(isset($_POST['brand4']))
                     {
                         echo "Puma<br/>";
                     } 
 
-                    if(isset($_POST['brand5']) 
+                    if(isset($_POST['brand5']))
                     {
                         echo "Reebok<br/>";
                     }  
@@ -39,8 +39,7 @@
             <p>Your favorite player is <?= htmlspecialchars($_POST['player'])?>. </p>
             <p>Your opinion about Basketball: <br>
                 <?= htmlspecialchars($_POST['opinion'])?>
-            </p>
-            
+            </p>  
         </div>
     </body>
 </html>
