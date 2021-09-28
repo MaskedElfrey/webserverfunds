@@ -36,7 +36,21 @@
                     }  
                 ?>
             </p>
-            <p>Your favorite player is <?= htmlspecialchars($_POST['player'])?>. </p>
+
+            <p>Your favorite player is 
+                <?php
+                    if(isset($_POST['player']))
+                    {
+                       echo "<?= htmlspecialchars($_POST['player'])?>".;
+                    }
+                    
+                    if(isset($_POST['other']))
+                    {
+                       echo "<?= htmlspecialchars($_POST['other'])?>".;
+                    }
+                ?>
+             </p>
+
             <p>Your opinion about Basketball: <br>
                 <?= htmlspecialchars($_POST['opinion'])?>
             </p>  
