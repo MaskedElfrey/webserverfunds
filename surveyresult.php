@@ -37,16 +37,18 @@
                 ?>
             </p>
 
-            <p>Your favorite player is 
+            <p>
                 <?php
                     if(isset($_POST['player']))
                     {
-                       echo "<?= htmlspecialchars($_POST['player'])?>".;
+                        $var1 = htmlspecialchars($_POST['player']);
+                        echo "Your favorite player is :" .$var1;
                     }
-                    
+
                     if(isset($_POST['other']))
                     {
-                       echo "<?= htmlspecialchars($_POST['other'])?>".;
+                        $var2 = htmlspecialchars($_POST['other']);
+                        echo "Your favorite player is :" .$var2;
                     }
                 ?>
              </p>
