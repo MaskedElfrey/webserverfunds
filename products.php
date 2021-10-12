@@ -5,7 +5,7 @@
     </head>
     <body>
         <div>
-            <p>You have requested <?= htmlspecialchars($_POST['quantity'])?> <?= htmlspecialchars($_POST['product'])?></p>
+            <p>You have requested <?= htmlspecialchars($_POST['quantity'])?> <?= htmlspecialchars($_POST['product'])?>(s).</p>
             </p>  
         </div>
     </body>
