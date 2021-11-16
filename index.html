@@ -2,19 +2,47 @@
 <html>
     <head>
         <title>index.html</title>
+        <script>
+            function myFunction() {
+            document.getElementById("text").innerHTML = "According to sources, the black and red colorway to the Air Jordan 1 was banned from the NBA by commissioner David Stern who said there wasn’t enough white on the sneakers.";
+             }
+            
+            function toggle() {
+                var x = document.getElementById("text");
+                    if (x.style.display == "none") {
+                        x.style.display = "block";
+                    } else { 
+                        x.style.display = "none";
+                    }
+            }
+
+            function changeImage() {
+                document.getElementById("image").src = "images/bredtoe.jpg";
+            }
+             
+        </script>
     </head>
     <body>
 
         <h1>Hype Club</h1>
         <p>Website for Hypebeasts!</p>
-        
+        Enter your name: <input type="text" id="myInput" onblur="blurFunction()">
         <div>
             <h2>Sneaker Section</h2>
                 <ul>
-                    <li>Zebra</li>
-                        <img src="images/zebra.jpg" width="852" height="480">
-                    <li>Bred Toe</li>
-                        <img src="images/bredtoe.jpg" width="852" height="480">                    
+                    <li>Yeezy 350 V2 "Zebra"</li>
+                        <p>This sneaker is a collab between Adidas and Kanye West.</p>
+                            <button onclick="alert('This shoe is valued at over $2000 on the resell market at one point')">Fun Fact.</button><br>
+                                <img src="images/zebra.jpg" width="852" height="480">
+
+                    <li>Air Jordan 1 "Banned"</li>
+                        <p id="text">Michael Jordan's first basketball shoes with Nike.</p>
+                            <button type="button" onclick="myFunction()">Fun fact</button>
+                            <input type="button" onclick="toggle()" value="Toggle text">
+                            <input type="button" onclick="changeImage()" value="See Another Image">
+                            <br>
+
+                       <img id ="image" src="images/banned1.jpg" width="852" height="480">                    
                  </ul>
 
         <p>These can be purchased in  <a href ="https://stockx.com/?gclid=051622dcc3aa1dc8af3c43f5c92fc8e5&gclsrc=3p.ds&&utm_campaignid=414434205&content=&keyword=stockx.com&msclkid=051622dcc3aa1dc8af3c43f5c92fc8e5&utm_source=bing&utm_medium=cpc&utm_campaign=C3%20-%20Branded%20-%20English%20(CA)&utm_term=stockx.com&utm_content=StockX" target = "_blank">
@@ -30,7 +58,9 @@
         <div>
             <h3>See also:</h3>
             <a href="car_club.html"> Cars Club</a>
+            <p id="text">Michael Jordan's first basketball shoes with Nike.</p>
         </div>
+
     </body>
 
 </html>
