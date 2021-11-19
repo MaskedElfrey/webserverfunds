@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Here are the results:<br>
+        <p>Results:<br>
             <?php
                 $raw = `./bme280`;
                 $deserialized = json_decode($raw);
