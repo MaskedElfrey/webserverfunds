@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Your shoe preference(s):<br>
+        <p>Here are the results:<br>
             <?php
                 $raw = `./bme280`;
                 $deserialized = json_decode($raw);
