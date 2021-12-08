@@ -6,7 +6,7 @@
             function readval() {
                 const xhttp = new XMLHttpRequest();
                 xhttp.onload = function() {
-                    document.getElementById("pin").innerHTML = this.responsetext;
+                    document.getElementById("pin").innerHTML = this.responseText;
                 }
                 xhttp.open("GET", "read.php");
                 xhttp.send();
