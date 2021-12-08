@@ -5,6 +5,7 @@
     </head>
     <body>
         <div>
+            <h1>Survey Results</h1>
             <p>Hi <?= htmlspecialchars($_POST['name'])?>.</p>
             <p>You chose <?= htmlspecialchars($_POST['play_ball'])?> to playing basketball.</p>
             <p>frequency: <?= htmlspecialchars($_POST['time'])?></p> 
@@ -42,6 +43,10 @@
             <p>Your opinion about Basketball: <br>
                 <?= htmlspecialchars($_POST['opinion'])?>
             </p>  
+        </div>
+        <div>
+            <a href="index.html"> Return to Homepage</a>
+            <a href="nbasurvey.html"> Return to Survey</a>
         </div>
     </body>
 </html>
