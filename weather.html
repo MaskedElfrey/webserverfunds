@@ -11,6 +11,20 @@
                 <label for="var3"> Altitude</label><br>
 
             <input type="submit" value="Submit"><br><br>
+
+            <button type="button" onclick="readval()">This button will read the LED value</button>
+            <p id="pin">The pin value is</p>
+
+            <script>
+                function readval() {
+                    const xhttp = new XMLHttpRequest();
+                    xhttp.onload = function() {
+                        document.getElementById("pin").innerHTML = this.responsetext;
+                    }
+                    xhttp.open("GET", "read.php");
+                    xhttp.send();
+                }
+            </script>
         </form>
     </body>
 </html>
