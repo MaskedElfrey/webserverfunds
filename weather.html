@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>weather.html</title>
+        <script>
+            function readval() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("pin").innerHTML = this.responsetext;
+                }
+                xhttp.open("GET", "read.php");
+                xhttp.send();
+            }
+        </script>
+    </head>
     <body>
         <form action="weather.php" method = "POST">
             <p>What would you like to know?</p>
@@ -15,16 +28,6 @@
             <button type="button" onclick="readval()">This button will read the LED value</button>
             <p id="pin">The pin value is</p>
 
-            <script>
-                function readval() {
-                    const xhttp = new XMLHttpRequest();
-                    xhttp.onload = function() {
-                        document.getElementById("pin").innerHTML = this.responsetext;
-                    }
-                    xhttp.open("GET", "read.php");
-                    xhttp.send();
-                }
-            </script>
         </form>
     </body>
 </html>
