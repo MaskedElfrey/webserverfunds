@@ -4,7 +4,7 @@
         <?= htmlspecialchars($_POST['search'])?>
         <?php
             $server = "localhost";
-            $username = "g00gle";
+            $username = "root";
             $password = "g00gle123";
             $database = "g00gle";
             $conn = mysqli_connect($server, $username, $password, $database);
