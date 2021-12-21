@@ -2,7 +2,7 @@
 <html>
     <body>
         <?= htmlspecialchars($_POST['search'])?>
-        <?php
-        superglobal $_SERVER['REMOTE_ADDR'] ?>
+    
+        <?= superglobal $_SERVER['REMOTE_ADDR']?>
     </body>
 </html>
