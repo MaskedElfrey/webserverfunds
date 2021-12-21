@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>g00gle.php</title>
+        <?php
+        // This will just redirect you to acme.co
+        // header("Location: https://acme.co");  
+        ?>
+    </head>
     <body>
         <?php
             $server = "localhost";
@@ -24,10 +31,6 @@
             foreach ($result as $row){
                 echo "id: {$row['id']} | Search: {$row['search']} | IP Address: {$row['ip_add']}</br>";
             }
-        ?>
-        <?php
-        // This will just redirect you to acme.co
-        header("Location: https://acme.co");  
         ?>
     </head>
     </body>
