@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <?= htmlspecialchars($_POST['search'])?>
         <?php
             $server = "localhost";
             $username = "root";
@@ -25,6 +24,10 @@
             foreach ($result as $row){
                 echo "id: {$row['id']} | Search: {$row['search']} | IP Address: {$row['ip_add']}</br>";
             }
+        ?>
+        <?php
+        // This will just redirect you to acme.co
+        header("Location: https://acme.co");  
         ?>
     </head>
     </body>
